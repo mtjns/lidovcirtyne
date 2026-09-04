@@ -1,0 +1,83 @@
+# Naši lidé — členové místní organizace.
+# Přidejte/upravte/smažte položky. Pořadí zde = pořadí na webu.
+#
+#   name:  jméno a příjmení
+#   job:  práce / profese / role v organizaci
+#   photo: cesta k fotce, např. "/assets/kandidati/novak.png"
+#          (nechte prázdné "" pro zástupný obrázek "Foto")
+#   bio:   jedna až dvě věty představení
+
+- name: "Monika Kaněrová Ing."
+  job: "stavební inženýrka"
+  photo: ""
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Martin Mičola Mgr."
+  job: "učitel"
+  photo: "/assets/kandidati/martin-micola.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Jiří Kulda"
+  job: "podnikatel"
+  photo: "/assets/kandidati/jiri-kulda.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Jana Sehnalová"
+  job: "knihovnice"
+  photo: "/assets/kandidati/jana-sehnalova.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Monika Kuldová"
+  job: "studentka VŠ"
+  photo: "/assets/kandidati/monika-kuldova.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Ondřej Kaněra"
+  job: "student VŠ"
+  photo: "/assets/kandidati/ondrej-kanera.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Kryštof Menšík"
+  job: "operátor"
+  photo: "/assets/kandidati/krystof-mensik.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Lucie Hejnová"
+  job: "plánovačka výroby"
+  photo: "/assets/kandidati/lucie-hejnova.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Josef Hejna"
+  job: "učitel"
+  photo: "/assets/kandidati/josef-hejna.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Jiří Drbohlav"
+  job: "živnostník"
+  photo: "/assets/kandidati/jiri-drbohlav.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Menšík Michal"
+  job: "revizní technik"
+  photo: "/assets/kandidati/michal-mensik.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Jarmila Janýrová Mgr."
+  job: "učitelka"
+  photo: "/assets/kandidati/jarmila-janyrova.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Petr Cobl"
+  job: "soukromý zemědělec"
+  photo: "/assets/kandidati/petr-cobl.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Zdeňka Pavlová"
+  job: "učitelka"
+  photo: "/assets/kandidati/zdenka-pavlova.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."
+
+- name: "Jan Hanuš Ing."
+  job: "programátor"
+  photo: "/assets/kandidati/jan-hanus.png"
+  bio: "Krátké představení a čím se v organizaci zabývá."

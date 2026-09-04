@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-body text-lidovci-ink bg-lidovci-white antialiased;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  /* Headlines: condensed, heavy, ALWAYS uppercase (brand rule) */
+  h1, h2, h3, h4 {
+    @apply font-heading font-black uppercase leading-[1.05] tracking-tight;
+  }
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  .container-lidovci {
+    @apply mx-auto w-full max-w-content px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Primary button — black on yellow (never white text on yellow) */
+  .btn {
+    @apply inline-flex items-center justify-center font-heading font-bold uppercase tracking-wide
+           px-6 py-3 text-base transition-transform duration-150 active:translate-y-px;
+  }
+  .btn-primary {
+    @apply btn bg-lidovci-yellow text-lidovci-black hover:brightness-95;
+  }
+  .btn-dark {
+    @apply btn bg-lidovci-ink text-lidovci-white hover:bg-black;
+  }
+  .btn-blue {
+    @apply btn bg-lidovci-blue text-lidovci-white hover:bg-lidovci-blue-dark;
+  }
+  .btn-outline {
+    @apply btn border-2 border-lidovci-ink text-lidovci-ink hover:bg-lidovci-ink hover:text-lidovci-white;
+  }
+  .btn-outline-blue {
+    @apply btn border-2 border-lidovci-blue text-lidovci-blue hover:bg-lidovci-blue hover:text-lidovci-white;
+  }
+
+  /* The signature "tlustá čára" (thick line) — dark or blue */
+  .thick-rule {
+    @apply block h-2 w-24 bg-lidovci-ink;
+  }
+  .thick-rule-blue {
+    @apply block h-2 w-24 bg-lidovci-blue;
+  }
+  .thick-rule-yellow {
+    @apply block h-2 w-24 bg-lidovci-yellow;
+  }
+
+  /* Tinted section (pale blue) — mirrors kdu.cz section backgrounds */
+  .section-tint {
+    @apply bg-lidovci-blue-light;
+  }
+
+  /* News / content card */
+  .card {
+    @apply bg-lidovci-white border-2 border-lidovci-ink;
+  }
+
+  /* Small uppercase date / eyebrow label */
+  .eyebrow {
+    @apply font-heading font-bold uppercase tracking-widest text-sm text-lidovci-blue-medium;
+  }
+
+  /* Nav — Open Sans 700 uppercase 14px, matching the live kdu.cz menu */
+  .nav-link {
+    @apply font-nav font-bold uppercase text-sm text-lidovci-ink
+           hover:text-lidovci-blue py-2;
+  }
+}

@@ -1,0 +1,39 @@
+# --- Site ---
+title: "KDU-ČSL Rtyně v Podkrkonoší"
+short_name: "Lidovci Rtyně v Podkrkonoší"
+description: "Místní organizace KDU-ČSL v Rtyni v Podkrkonoší — lidovci."
+lang: cs
+url: "https://test.lidovcirtyne.cz"
+baseurl: ""
+
+# --- Contact / org info (edit these) ---
+org:
+  name: "KDU-ČSL — místní organizace Rtyně v Podkrkonoší"
+  region: "Královéhradecký kraj"
+  region_url: "https://www.kdu.cz/Regiony/Kralovehradecky-kraj"
+  district: "okres Trutnov"
+  contact_person: "Monika Kaněrová"
+  email: "monva@email.cz"
+  phone: "+420 736 773 883"
+  address: "Rtyně v Podkrkonoší"
+  facebook: "https://www.facebook.com/profile.php?id=61593611292747"
+  national_url: "https://www.kdu.cz"
+
+# --- Build ---
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js
+  - _tailwindcss
+  - README.md
+  - brand-design-rulebook.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,39 @@
+{
+  // Name shown in VS Code / the Dev Containers UI.
+  "name": "Lidovci Rtyně — Jekyll + Tailwind",
+
+  // Ruby base image (for Jekyll) + Node feature (for Tailwind CSS).
+  "image": "mcr.microsoft.com/devcontainers/ruby:1-3.3-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+
+  // Name the actual Docker container (and its hostname), not just the VS Code UI.
+  // Shows up as this name in `docker ps`.
+  "runArgs": ["--name", "lidovci-rtyne-web", "--hostname", "lidovci-rtyne-web"],
+
+  // Ports served by `npm run dev`.
+  "forwardPorts": [4000, 35729],
+  "portsAttributes": {
+    "4000": { "label": "Jekyll site", "onAutoForward": "openBrowser" },
+    "35729": { "label": "LiveReload", "onAutoForward": "silent" }
+  },
+
+  // Install Ruby gems and npm packages once, after the container is built.
+  "postCreateCommand": "bundle install && npm install",
+
+  // Auto-start Jekyll + Tailwind watcher every time you attach.
+  // `npm run dev` runs `watch:css` (Tailwind) and `jekyll serve --livereload` together.
+  "postAttachCommand": "npm run dev",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Shopify.ruby-lsp",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+}

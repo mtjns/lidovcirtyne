@@ -1,0 +1,70 @@
+<header id="siteHeader" class="site-header">
+  <div class="container-lidovci">
+    <div class="site-header-inner flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="{{ '/' | relative_url }}" class="flex items-center gap-3 shrink-0" aria-label="{{ site.short_name }}">
+        <img src="{{ '/assets/logo/Lidovci_logo_RGB_black-KDU.svg' | relative_url }}"
+             alt="Noví lidovci — KDU-ČSL"
+             class="site-logo"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block';">
+        <span class="hidden font-heading font-black uppercase text-xl tracking-tight leading-none">Lidovci</span>
+        <span class="hidden sm:inline-block pl-3 border-l-2 border-lidovci-blue-line font-nav font-bold uppercase text-xs tracking-wide text-lidovci-blue leading-tight">
+          Rtyně&nbsp;v<br>Podkrkonoší
+        </span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-7" aria-label="Hlavní navigace">
+        {% for item in site.data.navigation.primary %}
+          {% assign cur = page.url | default: '/' %}
+          <a href="{{ item.url | relative_url }}"
+             class="nav-link {% if cur == item.url %}underline decoration-lidovci-yellow decoration-4 underline-offset-8{% endif %}">
+            {{ item.title }}
+          </a>
+        {% endfor %}
+      </nav>
+
+      <!-- Mobile toggle -->
+      <button id="navToggle" class="lg:hidden inline-flex items-center justify-center w-11 h-11 border-2 border-lidovci-black"
+              aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="square" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- The signature thick black line (hidden while over the hero) -->
+  <div class="site-header-line"></div>
+
+  <!-- Mobile nav panel -->
+  <nav id="mobileNav" class="lg:hidden hidden bg-lidovci-white border-b-2 border-lidovci-black" aria-label="Mobilní navigace">
+    <div class="container-lidovci py-4 flex flex-col divide-y divide-neutral-200">
+      {% for item in site.data.navigation.primary %}
+        <a href="{{ item.url | relative_url }}" class="nav-link py-3">{{ item.title }}</a>
+      {% endfor %}
+    </div>
+  </nav>
+</header>
+
+<script>
+  (function () {
+    // --- Mobile menu toggle ---
+    var btn = document.getElementById('navToggle');
+    var panel = document.getElementById('mobileNav');
+    if (btn && panel) {
+      btn.addEventListener('click', function () {
+        var open = panel.classList.toggle('hidden') === false;
+        btn.setAttribute('aria-expanded', String(open));
+      });
+      // Close the mobile panel after tapping an in-page anchor link.
+      panel.addEventListener('click', function (e) {
+        if (e.target.closest('a')) {
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  })();
+</script>

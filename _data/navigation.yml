@@ -1,0 +1,11 @@
+# Primary navigation for the local group.
+# One-page site: links point to section anchors on the homepage.
+primary:
+  - title: "O nás"
+    url: "/#o-nas"
+  - title: "Program"
+    url: "/#program"
+  - title: "Kandidáti"
+    url: "/#kandidati"
+  - title: "Kontakt"
+    url: "/#kontakt"

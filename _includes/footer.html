@@ -1,0 +1,61 @@
+<footer class="bg-lidovci-ink text-lidovci-white">
+  <!-- Thick yellow line marks the top of the footer -->
+  <div class="h-2 bg-lidovci-yellow"></div>
+
+  <div class="container-lidovci py-14">
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Brand + affiliation -->
+      <div>
+        <img src="{{ '/assets/logo/Lidovci_logo_RGB_white-KDU.svg' | relative_url }}"
+             alt="{{ site.short_name }}" class="h-10 w-auto mb-4"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+        <div class="hidden font-heading font-black uppercase text-2xl leading-none mb-4">Lidovci</div>
+        <p class="text-sm text-neutral-300 leading-relaxed">
+          {{ site.org.name }}<br>
+          {{ site.org.district }}, {{ site.org.region }}
+        </p>
+      </div>
+
+      <!-- O nás -->
+      <nav aria-label="O nás">
+        <h4 class="text-sm text-lidovci-yellow mb-4">O nás</h4>
+        <ul class="space-y-2 text-sm text-neutral-200">
+          <li><a href="{{ '/#o-nas' | relative_url }}" class="hover:text-lidovci-yellow">Kdo jsme</a></li>
+          <li><a href="{{ '/#program' | relative_url }}" class="hover:text-lidovci-yellow">Program</a></li>
+          <li><a href="{{ '/#kandidati' | relative_url }}" class="hover:text-lidovci-yellow">Kandidáti</a></li>
+          <li><a href="{{ '/#kontakt' | relative_url }}" class="hover:text-lidovci-yellow">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <!-- KDU-ČSL links -->
+      <nav aria-label="KDU-ČSL">
+        <h4 class="text-sm text-lidovci-yellow mb-4">KDU-ČSL</h4>
+        <ul class="space-y-2 text-sm text-neutral-200">
+          <li><a href="{{ site.org.national_url }}" class="hover:text-lidovci-yellow" rel="noopener" target="_blank">Celostátní web</a></li>
+          <li><a href="{{ site.org.region_url }}" class="hover:text-lidovci-yellow" rel="noopener" target="_blank">{{ site.org.region }}</a></li>
+          <li><a href="https://www.kdu.cz/stante-se-clenem" class="hover:text-lidovci-yellow" rel="noopener" target="_blank">Staňte se členem</a></li>
+        </ul>
+      </nav>
+
+      <!-- Kontakt -->
+      <div>
+        <h4 class="text-sm text-lidovci-yellow mb-4">Kontakt</h4>
+        <ul class="space-y-2 text-sm text-neutral-200">
+          <li>{{ site.org.address }}</li>
+          {% if site.org.email != "" %}<li><a href="mailto:{{ site.org.email }}" class="hover:text-lidovci-yellow">{{ site.org.email }}</a></li>{% endif %}
+          {% if site.org.phone != "" %}<li><a href="tel:{{ site.org.phone | remove: ' ' }}" class="hover:text-lidovci-yellow">{{ site.org.phone }}</a></li>{% endif %}
+        </ul>
+        <div class="flex gap-3 mt-4">
+          {% if site.org.facebook != "" %}<a href="{{ site.org.facebook }}" aria-label="Facebook" class="hover:text-lidovci-yellow" rel="noopener" target="_blank">Facebook</a>{% endif %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-12 pt-6 border-t border-neutral-800 flex flex-col sm:flex-row gap-3 justify-between text-xs text-neutral-400">
+      <p>© {{ site.time | date: '%Y' }} {{ site.org.name }}</p>
+      <p>Součást <a href="{{ site.org.national_url }}" class="hover:text-lidovci-yellow" rel="noopener" target="_blank">KDU-ČSL</a>. Vytvořil Matěj Jansa</p>
+    </div>
+  </div>
+</footer>

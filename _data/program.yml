@@ -1,0 +1,54 @@
+# Volební program — jednotlivé oblasti.
+# Přidejte/upravte/smažte položky. Pořadí zde = pořadí na webu.
+#   title:  název oblasti (nadpis)
+#   points: jednotlivé body
+
+- title: "Transparentní a otevřená radnice"
+  points:
+    - "Radnice, která naslouchá a spolupracuje s občany"
+    - "Peníze pro vaše nápady a projekty (participativní rozpočet)"
+    - "Včasná a dostatečná informovanost (havárie, mimořádné situace)"
+
+- title: "Živá voda pro Rtyni"
+  points:
+    - "Vybudování nových zdrojů pitné vody"
+    - "Podpora recyklace dešťové a šedé vody za účelem snižování spotřeby pitné vody"
+    - "Výstavba retenčních nádrží s možností volnočasového využití"
+
+- title: "Urbanistický rozvoj města"
+  points:
+    - "Dlouhodobý plán rozvoje města"
+    - "Nové stavební pozemky pro bydlení"
+    - "Optimalizace využití veřejných a občanských budov"
+    - "„Vraťme život na náměstí – vraťme život městu“"
+    - "Revitalizace náměstí doplněná o moderní vodní prvky a zeleň"
+
+- title: "Životní prostředí (půda, voda, vzduch) a odpadové hospodářství"
+  points:
+    - "Péče o krajinu, obnova mokřadů, zadržování dešťové vody a protipovodňová opatření"
+    - "Revitalizace ochranných pásem okolo zdrojů pitné vody"
+    - "Prosazovat šetrné zemědělství s minimalizací postřiků a hnojení"
+    - "Výsadba nových stromů a zakládání alejí"
+    - "Maximální recyklace odpadů ve městě do roku 2030"
+    - "Navýšení počtu kontejnerů"
+    - "Změna systému odpadového hospodářství domácností – barevné popelnice se snahou o 100% vytřídění recyklovatelných odpadů"
+
+- title: "Doprava a veřejný prostor"
+  points:
+    - "Zlepšení organizace vlakové a autobusové dopravy"
+    - "Výstavba parkovacích ploch a cyklostojanů u vlakové zastávky"
+    - "Bezpečné trasy pro všechny – revitalizace místních komunikací pro chodce a cyklisty"
+    - "Podpora senior TAXI"
+
+- title: "Rtyňská komunitní energetika s vlastní sítí"
+  points:
+    - "Výstavba FVE na veřejných budovách"
+    - "Férové sdílení elektřiny z obnovitelných zdrojů"
+    - "Úspory nákladů jako výrobce i jako spotřebitel"
+
+- title: "Podpora komunity „Město, které se stará o své občany“"
+  points:
+    - "Podpora podnikání a služeb (chytré obchody)"
+    - "Podpora spolkové a sportovní činnosti"
+    - "Podpora vzdělávání a pohybu pro seniory"
+    - "Podpora a rozvoj pečovatelské služby"

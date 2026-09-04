@@ -1,0 +1,161 @@
+---
+layout: default
+title: "Úvod"
+description: "Místní organizace KDU-ČSL v Rtyni v Podkrkonoší — Noví lidovci."
+---
+
+<!-- HERO -->
+<section id="uvod" class="bg-lidovci-yellow text-lidovci-black flex items-center">
+  <div class="container-lidovci py-16 w-full">
+    <div class="max-w-3xl">
+      <p class="font-heading font-bold uppercase tracking-widest text-sm mb-6">
+        KDU-ČSL · Rtyně v Podkrkonoší
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl mb-8">
+        Lidovci pro Rtyni<br>v Podkrkonoší
+      </h1>
+      <span class="thick-rule mb-8"></span>
+      <p class="font-body text-xl sm:text-2xl max-w-2xl mb-10">
+        Tvořte s námi budoucnost
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#program" class="btn-blue">Náš program</a>
+        <a href="#kontakt" class="btn-outline">Kontaktujte nás</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O NÁS -->
+<section id="o-nas" class="container-lidovci py-20 scroll-mt-24">
+  <div class="max-w-3xl">
+    <p class="eyebrow mb-2">Kdo jsme</p>
+    <h2 class="text-4xl mb-4">O nás</h2>
+    <span class="thick-rule mb-6"></span>
+    <p class="text-lg text-neutral-800 mb-4">
+      Jsme místní organizace KDU-ČSL — lidovci z Rtyně v Podkrkonoší. Sdružujeme
+      občany, kterým není lhostejná budoucnost našeho města a okolí. Vycházíme
+      z křesťanských a demokratických hodnot a klademe důraz na rodinu,
+      zodpovědnost a slušnost.
+    </p>
+  </div>
+
+  <div class="grid gap-8 sm:grid-cols-3 mt-12">
+    <div>
+      <h3 class="text-2xl mb-3">Rodina</h3>
+      <span class="thick-rule-blue mb-4"></span>
+      <p class="text-neutral-700">Rodina jako základ zdravé a soudržné společnosti.</p>
+    </div>
+    <div>
+      <h3 class="text-2xl mb-3">Zodpovědnost</h3>
+      <span class="thick-rule-blue mb-4"></span>
+      <p class="text-neutral-700">Zodpovědnost za město i krajinu Podkrkonoší.</p>
+    </div>
+    <div>
+      <h3 class="text-2xl mb-3">Slušnost</h3>
+      <span class="thick-rule-blue mb-4"></span>
+      <p class="text-neutral-700">Slušnost a transparentnost ve veřejném životě.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section id="program" class="section-tint border-y-2 border-lidovci-blue-line scroll-mt-24">
+  <div class="container-lidovci py-20">
+    <div class="max-w-3xl mb-12">
+      <p class="eyebrow mb-2">Naše priority</p>
+      <h2 class="text-4xl mb-4">Náš program</h2>
+      <span class="thick-rule-blue mb-6"></span>
+      <p class="text-lg text-neutral-800">Co chceme pro Rtyni v Podkrkonoší prosadit.</p>
+    </div>
+
+    <div class="grid gap-x-12 gap-y-12 md:grid-cols-2 items-start">
+      {% for area in site.data.program %}
+        <div>
+          <span class="thick-rule-blue mb-4"></span>
+          <h3 class="text-2xl text-lidovci-blue mb-3">{{ area.title }}</h3>
+          <ul class="list-disc pl-5 space-y-1 text-lidovci-ink font-semibold marker:text-lidovci-blue">
+            {% for point in area.points %}<li>{{ point }}</li>{% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- KANDIDÁTI -->
+<section id="kandidati" class="section-tint border-y-2 border-lidovci-blue-line scroll-mt-24">
+  <div class="container-lidovci py-20">
+    <div class="max-w-3xl mb-12">
+      <p class="eyebrow mb-2">Tým</p>
+      <h2 class="text-4xl mb-4">Naši lidé</h2>
+      <span class="thick-rule-blue mb-6"></span>
+      <p class="text-lg text-neutral-800">Lidé, kteří za místní organizaci pracují.</p>
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {% for person in site.data.lide %}
+        <div class="card p-6">
+          {% if person.photo and person.photo != "" %}
+            <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}" class="h-40 w-full object-cover mb-4">
+          {% else %}
+            <div class="h-40 bg-lidovci-blue-light mb-4 flex items-center justify-center font-heading font-black uppercase text-lidovci-blue/40 text-2xl">Foto</div>
+          {% endif %}
+          <h3 class="text-xl">{{ person.name }}</h3>
+          {% if person.role %}<p class="eyebrow">{{ person.role }}</p>{% endif %}
+          {% if person.bio %}<p class="text-neutral-700 mt-3 text-base">{{ person.bio }}</p>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="container-lidovci py-20 scroll-mt-24">
+  <div class="max-w-3xl mb-12">
+    <p class="eyebrow mb-2">Napište nám</p>
+    <h2 class="text-4xl mb-4">Kontakt</h2>
+    <span class="thick-rule mb-6"></span>
+    <p class="text-lg text-neutral-800">Ozvěte se nám s podnětem, dotazem nebo nabídkou pomoci.</p>
+  </div>
+
+  <div class="grid gap-10 md:grid-cols-2">
+    <div>
+      <h3 class="text-2xl mb-4 text-lidovci-blue">Místní organizace</h3>
+      <ul class="space-y-2 text-neutral-800">
+        <li><strong>{{ site.org.name }}</strong></li>
+        <li>{{ site.org.district }}, {{ site.org.region }}</li>
+        <li>{{ site.org.address }}</li>
+        {% if site.org.email != "" %}<li>E-mail: <a href="mailto:{{ site.org.email }}" class="text-lidovci-blue-medium underline decoration-lidovci-yellow decoration-2">{{ site.org.email }}</a></li>{% endif %}
+        {% if site.org.phone != "" %}<li>Telefon: <a href="tel:{{ site.org.phone | remove: ' ' }}" class="text-lidovci-blue-medium underline decoration-lidovci-yellow decoration-2">{{ site.org.phone }}</a></li>{% endif %}
+      </ul>
+
+      <h3 class="text-2xl font-heading font-black uppercase mt-8 mb-4 text-lidovci-blue">KDU-ČSL</h3>
+      <ul class="space-y-2 text-neutral-800">
+        <li><a href="{{ site.org.national_url }}" class="text-lidovci-blue-medium underline decoration-lidovci-yellow decoration-2" target="_blank" rel="noopener">Celostátní web KDU-ČSL</a></li>
+        <li><a href="{{ site.org.region_url }}" class="text-lidovci-blue-medium underline decoration-lidovci-yellow decoration-2" target="_blank" rel="noopener">{{ site.org.region }}</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-2xl mb-4 text-lidovci-blue">Napište nám</h3>
+      <!-- Static sites can't process forms on their own. Připojte službu jako
+           Formspree/Formcarry a doplňte její endpoint do action níže. -->
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-sm font-heading font-bold uppercase tracking-wide mb-1" for="name">Jméno</label>
+          <input id="name" name="name" type="text" required class="w-full border-2 border-lidovci-ink px-4 py-3 focus:outline-none focus:ring-4 focus:ring-lidovci-blue/40">
+        </div>
+        <div>
+          <label class="block text-sm font-heading font-bold uppercase tracking-wide mb-1" for="email">E-mail</label>
+          <input id="email" name="email" type="email" required class="w-full border-2 border-lidovci-ink px-4 py-3 focus:outline-none focus:ring-4 focus:ring-lidovci-blue/40">
+        </div>
+        <div>
+          <label class="block text-sm font-heading font-bold uppercase tracking-wide mb-1" for="message">Zpráva</label>
+          <textarea id="message" name="message" rows="5" required class="w-full border-2 border-lidovci-ink px-4 py-3 focus:outline-none focus:ring-4 focus:ring-lidovci-blue/40"></textarea>
+        </div>
+        <button type="submit" class="btn-blue">Odeslat</button>
+      </form>
+    </div>
+  </div>
+</section>

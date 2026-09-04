@@ -1,0 +1,34 @@
+/* =======================================================================
+   custom.css — hand-written overrides, loaded AFTER Tailwind (style.css).
+   Rules here win over the generated utility classes. Put manual tweaks here.
+   ======================================================================= */
+
+/* Hero fills the whole viewport (the header overlays it). */
+#uvod { min-height: 100vh; }
+
+/* -----------------------------------------------------------------------
+   Header: a FIXED bar — always compact and solid white, with the shadow
+   and the thick black line always visible. It overlays the top of the hero.
+   ----------------------------------------------------------------------- */
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;              /* pin to the top, full width */
+  z-index: 50;
+  background: #fff;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, .08);
+}
+.site-header-inner {
+  height: 4rem;                    /* 64px — compact */
+}
+.site-logo {
+  height: 2.25rem;                 /* 36px */
+  width: auto;
+}
+.site-header-line {                /* the signature thick black line */
+  height: .5rem;
+  background: #000;
+}
+
+/* The header is fixed, so pages WITHOUT a full-height hero need their
+   content pushed down or it hides under the header. */
+main:not(:has(#uvod)) { padding-top: 4.5rem; }
