@@ -1,0 +1,83 @@
+# Naši lidé — členové místní organizace.
+# Přidejte/upravte/smažte položky. Pořadí zde = pořadí na webu.
+#
+#   name:  jméno a příjmení
+#   job:  práce / profese / role v organizaci
+#   photo: cesta k fotce, např. "/assets/kandidati/novak.png"
+#          (nechte prázdné "" pro zástupný obrázek "Foto")
+#   bio:   jedna až dvě věty představení
+
+- name: "Ing. Monika Kaněrová"
+  job: "stavební inženýrka"
+  photo: "/assets/kandidati/monika-kanerova.png"
+  bio: ""
+
+- name: "Mgr. Martin Mičola"
+  job: "učitel"
+  photo: "/assets/kandidati/martin-micola.png"
+  bio: ""
+
+- name: "Jiří Kulda"
+  job: "podnikatel"
+  photo: "/assets/kandidati/jiri-kulda.png"
+  bio: ""
+
+- name: "Jana Sehnalová"
+  job: "knihovnice"
+  photo: "/assets/kandidati/jana-sehnalova.png"
+  bio: ""
+
+- name: "Monika Kuldová"
+  job: "studentka VŠ"
+  photo: "/assets/kandidati/monika-kuldova.png"
+  bio: ""
+
+- name: "Ondřej Kaněra"
+  job: "student VŠ"
+  photo: "/assets/kandidati/ondrej-kanera.png"
+  bio: ""
+
+- name: "Kryštof Menšík"
+  job: "operátor"
+  photo: "/assets/kandidati/krystof-mensik.png"
+  bio: ""
+
+- name: "Lucie Hejnová"
+  job: "plánovačka výroby"
+  photo: "/assets/kandidati/lucie-hejnova.png"
+  bio: ""
+
+- name: "Josef Hejna"
+  job: "učitel"
+  photo: "/assets/kandidati/josef-hejna.png"
+  bio: ""
+
+- name: "Jiří Drbohlav"
+  job: "živnostník"
+  photo: "/assets/kandidati/jiri-drbohlav.png"
+  bio: ""
+
+- name: "Menšík Michal"
+  job: "revizní technik"
+  photo: "/assets/kandidati/michal-mensik.png"
+  bio: ""
+
+- name: "Mgr. Jarmila Janýrová"
+  job: "učitelka"
+  photo: "/assets/kandidati/jarmila-janyrova.png"
+  bio: ""
+
+- name: "Petr Cobl"
+  job: "soukromý zemědělec"
+  photo: "/assets/kandidati/petr-cobl.png"
+  bio: ""
+
+- name: "Zdeňka Pavlová"
+  job: "učitelka"
+  photo: "/assets/kandidati/zdenka-pavlova.png"
+  bio: ""
+
+- name: "Ing. Jan Hanuš"
+  job: "programátor"
+  photo: "/assets/kandidati/jan-hanus.png"
+  bio: ""

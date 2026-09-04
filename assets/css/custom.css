@@ -1,0 +1,160 @@
+/* =======================================================================
+   custom.css — hand-written overrides, loaded AFTER Tailwind (style.css).
+   Rules here win over the generated utility classes. Put manual tweaks here.
+   ======================================================================= */
+
+/* -----------------------------------------------------------------------
+   Hero — foto se žlutou „samolepkou" (varianta 08).
+   Fills the whole viewport; the fixed white header overlays its top,
+   so the sticker is pushed below the header band.
+   ----------------------------------------------------------------------- */
+#uvod.hero-foto {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;   /* headline sits at the bottom */
+  overflow: hidden;
+  color: #fff;
+}
+.hero-foto__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 42%;   /* keep the group's faces in frame */
+  z-index: 0;
+}
+.hero-foto__scrim {           /* darken the bottom so the title reads */
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(0deg,
+              rgba(0, 0, 0, .72) 0%,
+              rgba(0, 0, 0, .18) 46%,
+              rgba(0, 0, 0, 0) 72%);
+}
+.hero-foto__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: clamp(3rem, 8vh, 6rem);
+}
+.hero-foto__title {
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  margin-bottom: 1.25rem;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, .35);
+}
+.hero-foto__rule {            /* the signature thick line, in yellow */
+  display: block;
+  height: .625rem;
+  width: 6rem;
+  background: #FFFA4B;
+  margin-bottom: 1.25rem;
+}
+.hero-foto__lead {            /* tagline under the headline */
+  font-family: "Open Sans", ui-sans-serif, system-ui, -apple-system, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+  line-height: 1.4;
+  max-width: 40ch;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .4);
+}
+
+/* Žlutá „samolepka" — mírně natočená, vpravo pod hlavičkou */
+.hero-foto__sticker {
+  position: absolute;
+  z-index: 3;
+  top: 5.75rem;               /* clears the 4.5rem fixed header */
+  right: 1.25rem;
+  transform: rotate(-4deg);
+  background: #FFFA4B;
+  color: #000;
+  padding: .85rem 1.35rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .28);
+}
+.hero-foto__sticker-big {
+  display: block;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: -.02em;
+}
+.hero-foto__sticker-small {
+  display: block;
+  font-weight: 600;
+  font-size: .8rem;
+  margin-top: .2rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-foto__sticker { right: clamp(1.5rem, 6vw, 5rem); top: 6.5rem; }
+  .hero-foto__sticker-big { font-size: 1.75rem; }
+}
+
+/* -----------------------------------------------------------------------
+   Header: a FIXED bar — always compact and solid white, with the shadow
+   and the thick black line always visible. It overlays the top of the hero.
+   ----------------------------------------------------------------------- */
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;              /* pin to the top, full width */
+  z-index: 50;
+  background: #fff;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, .08);
+}
+.site-header-inner {
+  height: 4rem;                    /* 64px — compact */
+}
+.site-logo {
+  height: 2.25rem;                 /* 36px */
+  width: auto;
+}
+.site-header-line {                /* the signature thick black line */
+  height: .5rem;
+  background: #000;
+}
+
+/* The header is fixed, so pages WITHOUT a full-height hero need their
+   content pushed down or it hides under the header. */
+main:not(:has(#uvod)) { padding-top: 4.5rem; }
+
+/* -----------------------------------------------------------------------
+   Hero on mobile: a BLUE panel with the text on top and the WHOLE photo
+   (uncropped, edge-to-edge) below it — instead of the full-bleed cover
+   crop used from tablet up.
+   ----------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  #uvod.hero-foto {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    background: #034187;        /* blue panel behind the text */
+    overflow: visible;
+  }
+  .hero-foto__content {
+    order: 1;
+    padding-top: 6rem;          /* clear the fixed header */
+    padding-bottom: 1.75rem;
+  }
+  .hero-foto__sticker {         /* tuck the badge to the right of the blue band */
+    position: static;
+    order: 2;
+    align-self: flex-end;
+    transform: rotate(-3deg);
+    margin: 0 1.25rem 1.5rem;
+  }
+  .hero-foto__scrim { display: none; }   /* no overlay needed on the blue panel */
+  .hero-foto__img {
+    order: 3;
+    position: static;
+    width: 100%;
+    height: auto;               /* natural aspect = the whole photo shows */
+    object-fit: fill;
+  }
+}

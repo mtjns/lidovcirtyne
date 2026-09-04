@@ -1,0 +1,243 @@
+---
+layout: default
+title: "Úvod"
+description: "Místní organizace KDU-ČSL v Rtyni v Podkrkonoší — Noví lidovci."
+---
+
+<!-- HERO — foto se žlutou samolepkou (varianta 08) -->
+<section id="uvod" class="hero-foto text-lidovci-white">
+  <img class="hero-foto__img" src="{{ '/assets/img/spolecne-hero.webp' | relative_url }}" srcset="{{ '/assets/img/spolecne-hero-1400.webp' | relative_url }} 1400w,
+               {{ '/assets/img/spolecne-hero.webp' | relative_url }} 2400w" sizes="100vw"
+    alt="Kandidáti a členové KDU-ČSL v Rtyni v Podkrkonoší" fetchpriority="high" decoding="async">
+  <div class="hero-foto__scrim"></div>
+
+  <!-- Titulek -->
+  <div class="container-lidovci hero-foto__content">
+    <h1 class="hero-foto__title">Tvořte s námi<br>budoucnost</h1>
+    <span class="hero-foto__rule"></span>
+    <p class="hero-foto__lead">Lidovci pro Rtyni v Podkrkonoší</p>
+  </div>
+</section>
+
+<!-- O NÁS -->
+<section id="o-nas" class="container-lidovci py-20 scroll-mt-24">
+  <div class="max-w-3xl">
+    <h2 class="text-4xl mb-4">Úvodní slovo</h2>
+    <span class="thick-rule mb-6"></span>
+    <p class="text-lg text-neutral-800 mb-4">
+      <strong>Milí Rtyňáci,</strong><br>
+      Rtyně je naše město a záleží nám na tom, jak se v něm žije dnes i jak bude vypadat v budoucnu. Chceme otevřeně
+      mluvit o tom, co se daří, ale také o věcech, které podle nás potřebují změnu a větší pozornost.
+      <br><br>
+      Víme, že žádná změna není jednoduchá a že některé věci se nedají vyřešit ze dne na den. Každá změna ale někde
+      začíná – nasloucháním občanům, otevřenou komunikací a konkrétními kroky.
+      <br><br>
+      Jdete do toho s námi?
+      <br><br>
+      <strong>Monika Kaněrová</strong><br>
+      lídryně kandidátky KDU-ČSL
+    </p>
+  </div>
+
+  <div class="grid gap-8 sm:grid-cols-3 mt-12 hidden">
+    <div>
+      <h3 class="text-2xl mb-3">Rodina</h3>
+      <span class="thick-rule-blue mb-4"></span>
+      <p class="text-neutral-700">Rodina jako základ zdravé a soudržné společnosti.</p>
+    </div>
+    <div>
+      <h3 class="text-2xl mb-3">Zodpovědnost</h3>
+      <span class="thick-rule-blue mb-4"></span>
+      <p class="text-neutral-700">Zodpovědnost za město i krajinu Podkrkonoší.</p>
+    </div>
+    <div>
+      <h3 class="text-2xl mb-3">Slušnost</h3>
+      <span class="thick-rule-blue mb-4"></span>
+      <p class="text-neutral-700">Slušnost a transparentnost ve veřejném životě.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section id="program" class="section-tint bg-lidovci-yellow scroll-mt-24">
+  <div class="container-lidovci py-20">
+    <div class="max-w-3xl mb-12">
+      <p class="eyebrow mb-2">Naše priority</p>
+      <h2 class="text-4xl mb-4">Náš program</h2>
+      <span class="thick-rule-blue mb-6"></span>
+      <p class="text-lg text-neutral-800">Co chceme pro Rtyni v Podkrkonoší prosadit.</p>
+    </div>
+
+    <div class="grid gap-x-12 gap-y-12 md:grid-cols-2 items-start">
+      {% for area in site.data.program %}
+      <div>
+        <span class="thick-rule-blue mb-4"></span>
+        <h3 class="text-2xl text-lidovci-blue mb-3">{{ area.title }}</h3>
+        <ul class="list-disc pl-5 space-y-1 text-lidovci-ink font-semibold marker:text-lidovci-blue">
+          {% for point in area.points %}<li>{{ point }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- KANDIDÁTI -->
+<section id="kandidati" class="section-tint scroll-mt-24">
+  <div class="container-lidovci py-20">
+    <div class="max-w-3xl mb-12">
+      <p class="eyebrow mb-2">Tým</p>
+      <h2 class="text-4xl mb-4">Naši lidé</h2>
+      <span class="thick-rule-blue mb-6"></span>
+      <p class="text-lg text-neutral-800">Lidé, kteří za nás kandidují.</p>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {% for person in site.data.lide %}
+      <div class="bg-lidovci-white shadow-sm">
+        <div class="relative">
+          {% if person.photo and person.photo != "" %}
+          <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}"
+            class="w-full h-80 object-cover object-top">
+          {% else %}
+          <div
+            class="w-full h-80 bg-lidovci-blue-light flex items-center justify-center font-heading font-black uppercase text-lidovci-blue/40 text-3xl">
+            Foto</div>
+          {% endif %}
+
+          <!-- Ballot number (pořadí na kandidátce) -->
+          <span
+            class="absolute top-0 left-0 w-12 h-12 flex items-center justify-center bg-lidovci-blue text-lidovci-white font-heading font-black text-2xl">{{
+            forloop.index }}</span>
+        </div>
+
+        <div class="p-5">
+          <span class="thick-rule-blue mb-3"></span>
+          <h3 class="text-lg leading-tight">{{ person.name }}</h3>
+          {% if person.job %}<p class="eyebrow mt-1">{{ person.job }}</p>{% endif %}
+          {% if person.bio and person.bio != "" %}<p class="text-neutral-700 mt-3 text-base">{{ person.bio }}</p>{%
+          endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="container-lidovci py-20 scroll-mt-24">
+  <div class="max-w-3xl mb-12">
+    <p class="eyebrow mb-2">Napište nám</p>
+    <h2 class="text-4xl mb-4">Kontakt</h2>
+    <span class="thick-rule mb-6"></span>
+    <p class="text-lg text-neutral-800">Ozvěte se nám s podnětem, dotazem nebo nabídkou pomoci.</p>
+  </div>
+
+  <div class="grid gap-10 md:grid-cols-2">
+    <div>
+      <h3 class="text-2xl mb-4 text-lidovci-blue">Místní organizace</h3>
+      <ul class="space-y-2 text-neutral-800">
+        <li><strong>{{ site.org.name }}</strong></li>
+        <li>{{ site.org.district }}, {{ site.org.region }}</li>
+        <li>{{ site.org.address }}</li>
+        {% if site.org.email != "" %}<li>E-mail: <a href="mailto:{{ site.org.email }}"
+            class="text-lidovci-blue-medium underline decoration-lidovci-yellow decoration-2">{{ site.org.email }}</a>
+        </li>{% endif %}
+        {% if site.org.phone != "" %}<li>Telefon: <a href="tel:{{ site.org.phone | remove: ' ' }}"
+            class="text-lidovci-blue-medium underline decoration-lidovci-yellow decoration-2">{{ site.org.phone }}</a>
+        </li>{% endif %}
+      </ul>
+
+      <h3 class="text-2xl font-heading font-black uppercase mt-8 mb-4 text-lidovci-blue">KDU-ČSL</h3>
+      <ul class="space-y-2 text-neutral-800">
+        <li><a href="{{ site.org.national_url }}"
+            class="text-lidovci-blue-medium underline decoration-lidovci-yellow decoration-2" target="_blank"
+            rel="noopener">Celostátní web KDU-ČSL</a></li>
+        <li><a href="{{ site.org.region_url }}"
+            class="text-lidovci-blue-medium underline decoration-lidovci-yellow decoration-2" target="_blank"
+            rel="noopener">{{ site.org.region }}</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-2xl mb-4 text-lidovci-blue">Napište nám</h3>
+      <!-- Odesílání zajišťuje FormSubmit (https://formsubmit.co). Příjemce se
+           nastavuje v _config.yml → org.form_email. Zprávy se posílají přes
+           AJAX, výsledek se zobrazí pod tlačítkem bez odchodu ze stránky. -->
+      <form id="contactForm" action="https://formsubmit.co/ajax/{{ site.org.form_email }}" method="POST"
+        class="space-y-4">
+        <!-- FormSubmit nastavení -->
+        <input type="hidden" name="_subject" value="Zpráva z webu — {{ site.title }}">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Honeypot proti spamu (ponechte prázdné) -->
+        <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div>
+          <label class="block text-sm font-heading font-bold uppercase tracking-wide mb-1" for="name">Jméno</label>
+          <input id="name" name="name" type="text" required
+            class="w-full border-2 border-lidovci-ink px-4 py-3 focus:outline-none focus:ring-4 focus:ring-lidovci-blue/40">
+        </div>
+        <div>
+          <label class="block text-sm font-heading font-bold uppercase tracking-wide mb-1" for="email">E-mail</label>
+          <input id="email" name="email" type="email" required
+            class="w-full border-2 border-lidovci-ink px-4 py-3 focus:outline-none focus:ring-4 focus:ring-lidovci-blue/40">
+        </div>
+        <div>
+          <label class="block text-sm font-heading font-bold uppercase tracking-wide mb-1" for="message">Zpráva</label>
+          <textarea id="message" name="message" rows="5" required
+            class="w-full border-2 border-lidovci-ink px-4 py-3 focus:outline-none focus:ring-4 focus:ring-lidovci-blue/40"></textarea>
+        </div>
+        <button type="submit" class="btn-blue">Odeslat</button>
+        <!-- Stavová hláška — místo je vyhrazené vždy, aby layout neposkakoval -->
+        <p id="formStatus" role="status" aria-live="polite" class="min-h-[1.5rem] text-base font-semibold"
+          data-ok-class="text-lidovci-blue" data-err-class="text-red-700"></p>
+      </form>
+
+      <script>
+        (function () {
+          var form = document.getElementById('contactForm');
+          if (!form) return;
+          var status = document.getElementById('formStatus');
+          var btn = form.querySelector('button[type="submit"]');
+          var okClass = status.getAttribute('data-ok-class');
+          var errClass = status.getAttribute('data-err-class');
+
+          function setStatus(msg, ok) {
+            status.textContent = msg;
+            status.classList.remove(okClass, errClass);
+            if (msg) status.classList.add(ok ? okClass : errClass);
+          }
+
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            setStatus('', true);
+            btn.disabled = true;
+            var original = btn.textContent;
+            btn.textContent = 'Odesílám…';
+
+            fetch(form.action, {
+              method: 'POST',
+              body: new FormData(form),
+              headers: { 'Accept': 'application/json' }
+            })
+              .then(function (r) { return r.json().catch(function () { return {}; }).then(function (d) { return { ok: r.ok, data: d }; }); })
+              .then(function (res) {
+                if (res.ok && res.data && String(res.data.success) === 'true') {
+                  setStatus('Děkujeme, zpráva byla odeslána.', true);
+                  form.reset();
+                } else {
+                  setStatus('Zprávu se nepodařilo odeslat. Zkuste to prosím znovu.', false);
+                }
+              })
+              .catch(function () {
+                setStatus('Odeslání selhalo. Zkontrolujte připojení a zkuste to znovu.', false);
+              })
+              .finally(function () {
+                btn.disabled = false;
+                btn.textContent = original;
+              });
+          });
+        })();
+      </script>
+    </div>
+  </div>
+</section>
