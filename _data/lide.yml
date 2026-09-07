@@ -3,81 +3,81 @@
 #
 #   name:  jméno a příjmení
 #   job:  práce / profese / role v organizaci
-#   photo: cesta k fotce, např. "/assets/kandidati/novak.png"
+#   photo: cesta k fotce, např. "/assets/kandidati/novak.webp"
 #          (nechte prázdné "" pro zástupný obrázek "Foto")
 #   bio:   jedna až dvě věty představení
 
 - name: "Ing. Monika Kaněrová"
   job: "stavební inženýrka"
-  photo: "/assets/kandidati/monika-kanerova.png"
+  photo: "/assets/kandidati/monika-kanerova.webp"
   bio: ""
 
 - name: "Mgr. Martin Mičola"
   job: "učitel"
-  photo: "/assets/kandidati/martin-micola.png"
+  photo: "/assets/kandidati/martin-micola.webp"
   bio: ""
 
 - name: "Jiří Kulda"
   job: "podnikatel"
-  photo: "/assets/kandidati/jiri-kulda.png"
+  photo: "/assets/kandidati/jiri-kulda.webp"
   bio: ""
 
 - name: "Jana Sehnalová"
   job: "knihovnice"
-  photo: "/assets/kandidati/jana-sehnalova.png"
+  photo: "/assets/kandidati/jana-sehnalova.webp"
   bio: ""
 
 - name: "Monika Kuldová"
   job: "studentka VŠ"
-  photo: "/assets/kandidati/monika-kuldova.png"
+  photo: "/assets/kandidati/monika-kuldova.webp"
   bio: ""
 
 - name: "Ondřej Kaněra"
   job: "student VŠ"
-  photo: "/assets/kandidati/ondrej-kanera.png"
+  photo: "/assets/kandidati/ondrej-kanera.webp"
   bio: ""
 
 - name: "Kryštof Menšík"
   job: "operátor"
-  photo: "/assets/kandidati/krystof-mensik.png"
+  photo: "/assets/kandidati/krystof-mensik.webp"
   bio: ""
 
 - name: "Lucie Hejnová"
   job: "plánovačka výroby"
-  photo: "/assets/kandidati/lucie-hejnova.png"
+  photo: "/assets/kandidati/lucie-hejnova.webp"
   bio: ""
 
 - name: "Josef Hejna"
   job: "učitel"
-  photo: "/assets/kandidati/josef-hejna.png"
+  photo: "/assets/kandidati/josef-hejna.webp"
   bio: ""
 
 - name: "Jiří Drbohlav"
   job: "živnostník"
-  photo: "/assets/kandidati/jiri-drbohlav.png"
+  photo: "/assets/kandidati/jiri-drbohlav.webp"
   bio: ""
 
 - name: "Menšík Michal"
   job: "revizní technik"
-  photo: "/assets/kandidati/michal-mensik.png"
+  photo: "/assets/kandidati/michal-mensik.webp"
   bio: ""
 
 - name: "Mgr. Jarmila Janýrová"
   job: "učitelka"
-  photo: "/assets/kandidati/jarmila-janyrova.png"
+  photo: "/assets/kandidati/jarmila-janyrova.webp"
   bio: ""
 
 - name: "Petr Cobl"
   job: "soukromý zemědělec"
-  photo: "/assets/kandidati/petr-cobl.png"
+  photo: "/assets/kandidati/petr-cobl.webp"
   bio: ""
 
 - name: "Zdeňka Pavlová"
   job: "učitelka"
-  photo: "/assets/kandidati/zdenka-pavlova.png"
+  photo: "/assets/kandidati/zdenka-pavlova.webp"
   bio: ""
 
 - name: "Ing. Jan Hanuš"
   job: "programátor"
-  photo: "/assets/kandidati/jan-hanus.png"
+  photo: "/assets/kandidati/jan-hanus.webp"
   bio: ""
