@@ -66,10 +66,11 @@
   }
   </script>
 
-  <!-- Body & nav font: Open Sans (free / open source) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Body & nav font: Open Sans (self-hosted, SIL OFL) -->
+  <link rel="preload" href="{{ '/assets/fonts/open-sans-latin-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/open-sans-latin-800.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/open-sans-latin-ext-800.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
 
   <!-- Compiled Tailwind CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
