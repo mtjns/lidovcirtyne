@@ -26,6 +26,46 @@
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
   <meta name="twitter:image" content="{{ '/assets/logo/og-image.png' | absolute_url }}">
 
+  <!-- Structured data (JSON-LD) — driven from _config.yml `org` -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": {{ '/#organization' | absolute_url | jsonify }},
+        "name": {{ site.org.name | jsonify }},
+        "url": {{ '/' | absolute_url | jsonify }},
+        "logo": {{ '/assets/logo/Lidovci_logo_RGB_black-KDU.png' | absolute_url | jsonify }},
+        "image": {{ '/assets/logo/og-image.png' | absolute_url | jsonify }},
+        {% if site.org.email != "" %}"email": {{ site.org.email | jsonify }},{% endif %}
+        {% if site.org.phone != "" %}"telephone": {{ site.org.phone | jsonify }},{% endif %}
+        {% if site.org.facebook != "" %}"sameAs": [ {{ site.org.facebook | jsonify }} ],{% endif %}
+        "areaServed": {{ site.org.address | append: ", " | append: site.org.district | append: ", " | append: site.org.region | jsonify }},
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": {{ site.org.address | jsonify }},
+          "addressRegion": {{ site.org.region | jsonify }},
+          "addressCountry": "CZ"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "KDU-ČSL",
+          "url": {{ site.org.national_url | jsonify }}
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": {{ '/#website' | absolute_url | jsonify }},
+        "url": {{ '/' | absolute_url | jsonify }},
+        "name": {{ site.title | jsonify }},
+        "inLanguage": "cs",
+        "publisher": { "@id": {{ '/#organization' | absolute_url | jsonify }} }
+      }
+    ]
+  }
+  </script>
+
   <!-- Body & nav font: Open Sans (free / open source) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
