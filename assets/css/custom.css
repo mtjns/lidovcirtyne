@@ -120,6 +120,24 @@
   background: #000;
 }
 
+/* Facebook link in the nav — round blue badge with a white "f" */
+.nav-fb {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  background: #034187;
+  color: #fff;
+  transition: background-color .15s ease;
+}
+.nav-fb:hover { background: #023671; }
+.nav-fb svg { height: 1.15rem; width: auto; display: block; }
+.nav-fb--sm { width: 2rem; height: 2rem; }
+.nav-fb--sm svg { height: 1rem; }
+
 /* The header is fixed, so pages WITHOUT a full-height hero need their
    content pushed down or it hides under the header. */
 main:not(:has(#uvod)) { padding-top: 4.5rem; }

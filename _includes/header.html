@@ -23,6 +23,13 @@
             {{ item.title }}
           </a>
         {% endfor %}
+        {% if site.org.facebook != "" %}
+          <a href="{{ site.org.facebook }}" class="nav-fb" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 320 512" fill="currentColor" aria-hidden="true">
+              <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+            </svg>
+          </a>
+        {% endif %}
       </nav>
 
       <!-- Mobile toggle -->
@@ -44,6 +51,16 @@
       {% for item in site.data.navigation.primary %}
         <a href="{{ item.url | relative_url }}" class="nav-link py-3">{{ item.title }}</a>
       {% endfor %}
+      {% if site.org.facebook != "" %}
+        <a href="{{ site.org.facebook }}" class="nav-link py-3 flex items-center gap-3" target="_blank" rel="noopener">
+          <span class="nav-fb nav-fb--sm" aria-hidden="true">
+            <svg viewBox="0 0 320 512" fill="currentColor">
+              <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+            </svg>
+          </span>
+          Facebook
+        </a>
+      {% endif %}
     </div>
   </nav>
 </header>
