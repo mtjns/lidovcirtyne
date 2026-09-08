@@ -43,5 +43,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-  - "*.pdf"
   - banner-2x1.html
