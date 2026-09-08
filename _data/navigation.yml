@@ -7,5 +7,7 @@ primary:
     url: "/#program"
   - title: "Kandidáti"
     url: "/#kandidati"
+  - title: "Ke stažení"
+    url: "/#ke-stazeni"
   - title: "Kontakt"
     url: "/#kontakt"
