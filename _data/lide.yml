@@ -10,7 +10,12 @@
 - name: "Ing. Monika Kaněrová"
   job: "stavební inženýrka"
   photo: "/assets/kandidati/monika-kanerova.webp"
-  bio: ""
+  bio: "Vystudovala jsem stavební fakultu v Brně a celý svůj profesní život se pohybuji v
+    oblasti stavebnictví. Když jsem před 22 lety Rtyní poprvé projížděla, řekla jsem si: „Tady by bylo hezké
+    bydlet.“ Žiji zde více než 20 let a chci, aby Rtyně byla dobrým místem pro život pro všechny generace.
+    Aby zde mladé rodiny našly dobré podmínky pro život, děti měly prostor pro svůj rozvoj a naši senioři se
+    cítili bezpečně a měli potřebnou péči a podporu. Zkušenost s fungováním města mám i z práce
+    ve finančním výboru, jehož členkou jsem byla, a nyní působím v kontrolním výboru města."
 
 - name: "Mgr. Martin Mičola"
   job: "učitel"
@@ -20,52 +25,85 @@
 - name: "Jiří Kulda"
   job: "podnikatel"
   photo: "/assets/kandidati/jiri-kulda.webp"
-  bio: ""
+  bio: "Jsem podnikatelem ve strojírenství a rád bych své životní zkušenosti převedl do správy a
+    řízení našeho města. Mé hlavní priority jsou bezpečnost, udržitelný rozvoj města, rozvoj malého a
+    drobného podnikání a ochrana životního prostředí. Rád jezdím na kole, a proto bych ve městě a okolí
+    vytvořil zpevněné stezky, které bychom mohli využívat nejen ve volném čase."
 
 - name: "Jana Sehnalová"
   job: "knihovnice"
   photo: "/assets/kandidati/jana-sehnalova.webp"
-  bio: ""
+  bio: "Rtyně v Podkrkonoší je pro mě domovem, místem, kde žiji a pracuji a kde potkávám
+    každý den spoustu lidí. Už řadu let vedu naši městskou knihovnu. Práce s lidmi mě naučila především
+    naslouchat, vnímat jejich potřeby a hledat cesty, jak věci zlepšovat. Věřím, že Rtyně není jen o
+    budovách, silnicích a číslech v rozpočtu. Je především o lidech, o jejich každodenním životě, o
+    sousedských vztazích a o tom, jak se nám tu společně žije. Chci naslouchat, hledat řešení a dělat věci,
+    které mají pro Rtyni skutečný smysl. Protože Rtyně je náš domov, stojí za to o něj pečovat."
 
 - name: "Monika Kuldová"
   job: "studentka VŠ"
   photo: "/assets/kandidati/monika-kuldova.webp"
-  bio: ""
+  bio: "Jsem rodilá Rtyňačka, studentka učitelství, která by tu ráda zůstala i po vysoké škole.
+    Záleží mi na našem městě a přála bych si, abychom se po svých studiích měli kam vrátit. Aby pracovní
+    příležitosti a dobré podmínky pro život byly důvodem návratu. Ráda bych ovlivnila rozhodování v našem
+    městě směrem do budoucna s ohledem na další generace."
 
 - name: "Ondřej Kaněra"
   job: "student VŠ"
   photo: "/assets/kandidati/ondrej-kanera.webp"
-  bio: ""
+  bio: "Jsem studentem Technické univerzity Ostrava. Několik let vedu skautskou skupinku,
+    kde se učím zodpovědnosti, spolupráci a práci s mladými lidmi. Ve volném čase se věnuji hudbě – hraji
+    na klavír a kytaru. Baví mě také technika, strojní mechanismy a všechno, co spojuje nápad, znalosti a
+    praktické řešení. Rtyně v Podkrkonoší je mým rodným městem a rád bych se podílel na dalším rozvoji.
+    Myslím, že může být moderním a atraktivním místem pro život mladých lidí i rodin, aniž by ztratila svou
+    jedinečnou historii a tradice."
 
 - name: "Kryštof Menšík"
   job: "operátor"
   photo: "/assets/kandidati/krystof-mensik.webp"
-  bio: ""
+  bio: "Je mi 23 let a studuji na VOŠ. Rád bych se zasazoval o výstavbu městských bytů,
+    zejména pro mladé. Rád bych i nadále podporoval kulturní život ve Rtyni. V neposlední řadě bych
+    prosadil obchod se smíšeným zbožím na horní Rtyni."
 
 - name: "Lucie Hejnová"
   job: "plánovačka výroby"
   photo: "/assets/kandidati/lucie-hejnova.webp"
-  bio: ""
+  bio: "Ahoj, jsem rodačka ze Rtyně. Působím v organizaci Orel Rtyně, kde jsem členkou rady.
+    Většinu svého volného času věnuji dětem. Florbal mě provází už řadu let, trénuji a nejmenší děti vedu
+    v Orlíčku k všestrannému pohybu. Jsem také mezinárodním rozhodčím. Sport mě sice neživí, ale je mou
+    nedílnou součástí. Díky svým zkušenostem z práce, ze sportu, i z organizování a působení v různých
+    funkcích bych ráda přispěla k rozvoji našeho města."
 
 - name: "Josef Hejna"
   job: "učitel"
   photo: "/assets/kandidati/josef-hejna.webp"
-  bio: ""
+  bio: "Pracuji jako učitel hudby v ZUŠ. Jako kapelník Koletovy dechové hudby přispívám ke
+    kulturnímu dění v naší obci. Mezi mé největší koníčky patří stolní tenis a lukostřelba."
 
 - name: "Jiří Drbohlav"
   job: "živnostník"
   photo: "/assets/kandidati/jiri-drbohlav.webp"
-  bio: ""
+  bio: "Jsem místní podnikatel a věnuji se zakázkové a malosériové kovovýrobě. Díky své práci
+    jsem zvyklý hledat praktická řešení, přemýšlet nad věcmi v souvislostech a dotahovat je do výsledku.
+    Záleží mi na místě, kde žiji, a proto se zajímám o jeho historii, současnost i budoucí podobu. Rád bych
+    svými zkušenostmi a pohledem člověka, který zde žije a podniká, přispěl k tomu, aby se naše obec
+    rozvíjela s respektem k její historii, krajině i lidem, kteří v ní žijí. Ve volném čase se věnuji cyklistice a
+    astronomii."
 
 - name: "Michal Menšík"
   job: "revizní technik"
   photo: "/assets/kandidati/michal-mensik.webp"
-  bio: ""
+  bio: "Je mi 47 let a živím se jako revizní technik. Věnuji se několik let fotbalu ve Rtyni. Rád
+    bych veškerý sport ve Rtyni podpořil ve větší míře. Zejména vybudováním ubytování a zázemí pro
+    sportovce."
 
 - name: "Mgr. Jarmila Janýrová"
   job: "učitelka"
   photo: "/assets/kandidati/jarmila-janyrova.webp"
-  bio: ""
+  bio: "Jsem učitelkou na druhém stupni, vedoucí divadelního kroužku a maminkou čtyř dětí.
+    Když jsem se do Rtyně před 15 lety přistěhovala, byla jsem okouzlena nejen krásou zdejší přírody, ale i
+    bohatstvím kultury, kterou vytvářejí místní občané. Myslím, že je třeba ocenit a podporovat všechny, kteří
+    jsou ochotni obětovat svůj čas i síly druhým."
 
 - name: "Petr Cobl"
   job: "soukromý zemědělec"
@@ -75,9 +113,14 @@
 - name: "Ing. Zdeňka Pavlová"
   job: "učitelka"
   photo: "/assets/kandidati/zdenka-pavlova.webp"
-  bio: ""
+  bio: "Jsem mámou tří dětí a profesí pedagogickým pracovníkem. Práce s dětmi mě
+    naplňuje a dává mi hluboký smysl – baví mě sledovat, jak rostou, objevují svět a učí se samostatnosti.
+    Ve volném čase nejraději vyrazím do přírody, sportuji, čtu nebo poslouchám hudbu. Největší radost mám
+    z času, který prožíváme společně s rodinou.<br>
+    V dnešní hektické době považuji za klíčové, aby děti a mladí lidé měli dostatek prostoru pro smysluplný rozvoj s možností odpočinku. Ve Rtyni chci podpořit rozšiřování možností volnočasového vyžití, kde děti
+    najdou nejen zálibu na celý život, ale i nová přátelství a bezpečné prostředí."
 
 - name: "Ing. Jan Hanuš"
   job: "programátor"
   photo: "/assets/kandidati/jan-hanus.webp"
-  bio: ""
+  bio: "Ze Rtyně nepocházím, ale moc rád tu většinu života bydlím. Chtěl bych, aby se tu líbilo i dalším generacím. Tedy ať také Horní Rtyně je středem zájmu."
