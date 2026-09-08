@@ -19,6 +19,27 @@ description: "Místní organizace KDU-ČSL v Rtyni v Podkrkonoší — Noví lid
   </div>
 </section>
 
+<section id="priority" class="container-lidovci py-20 scroll-mt-24">
+  <div class="grid gap-[4rem] sm:grid-cols-3 mt-12">
+    <div>
+      <h3 class="text-2xl mb-3">Zdraví</h3>
+      <span class="thick-rule-blue mb-4"></span>
+      <p class="text-neutral-700">Kvalitní voda pro občany a vždy přístupná péče zdravotníků.</p>
+    </div>
+    <div>
+      <h3 class="text-2xl mb-3">Lidé</h3>
+      <span class="thick-rule-blue mb-4"></span>
+      <p class="text-neutral-700">Adekvátní podpora spolků, aby Rtyně byla stále lepším místem pro život všech generací.
+      </p>
+    </div>
+    <div>
+      <h3 class="text-2xl mb-3">Krajina</h3>
+      <span class="thick-rule-blue mb-4"></span>
+      <p class="text-neutral-700">Promyšlený rozvoj a urbanistická celistvost města.</p>
+    </div>
+  </div>
+</section>
+
 <!-- O NÁS -->
 <section id="o-nas" class="container-lidovci py-20 scroll-mt-24">
   <div class="max-w-3xl">
@@ -37,24 +58,6 @@ description: "Místní organizace KDU-ČSL v Rtyni v Podkrkonoší — Noví lid
       <strong>Monika Kaněrová</strong><br>
       lídryně kandidátky KDU-ČSL
     </p>
-  </div>
-
-  <div class="grid gap-8 sm:grid-cols-3 mt-12 hidden">
-    <div>
-      <h3 class="text-2xl mb-3">Rodina</h3>
-      <span class="thick-rule-blue mb-4"></span>
-      <p class="text-neutral-700">Rodina jako základ zdravé a soudržné společnosti.</p>
-    </div>
-    <div>
-      <h3 class="text-2xl mb-3">Zodpovědnost</h3>
-      <span class="thick-rule-blue mb-4"></span>
-      <p class="text-neutral-700">Zodpovědnost za město i krajinu Podkrkonoší.</p>
-    </div>
-    <div>
-      <h3 class="text-2xl mb-3">Slušnost</h3>
-      <span class="thick-rule-blue mb-4"></span>
-      <p class="text-neutral-700">Slušnost a transparentnost ve veřejném životě.</p>
-    </div>
   </div>
 </section>
 
@@ -115,7 +118,8 @@ description: "Místní organizace KDU-ČSL v Rtyni v Podkrkonoší — Noví lid
           <span class="thick-rule-blue mb-3"></span>
           <h3 class="text-lg leading-tight">{{ person.name }}</h3>
           {% if person.job %}<p class="eyebrow mt-1">{{ person.job }}</p>{% endif %}
-          {% if person.bio and person.bio != "" %}<p class="text-neutral-700 mt-3 text-sm text-justify">{{ person.bio }}</p>{%
+          {% if person.bio and person.bio != "" %}<p class="text-neutral-700 mt-3 text-sm text-justify">{{ person.bio }}
+          </p>{%
           endif %}
         </div>
       </div>
@@ -134,7 +138,8 @@ description: "Místní organizace KDU-ČSL v Rtyni v Podkrkonoší — Noví lid
       <p class="text-lg text-neutral-800">Volební materiály ke stažení.</p>
     </div>
 
-    <a href="{{ '/assets/files/baner_velky.pdf' | relative_url }}" download="Lidovci Rtyně - volební plakát.pdf" target="_blank" rel="noopener"
+    <a href="{{ '/assets/files/baner_velky.pdf' | relative_url }}" download="Lidovci Rtyně - volební plakát.pdf"
+      target="_blank" rel="noopener"
       class="group flex items-center gap-5 bg-lidovci-white border-2 border-lidovci-ink p-5 max-w-xl hover:bg-lidovci-blue-light transition-colors">
       <svg class="w-12 h-12 shrink-0 text-lidovci-blue" fill="none" stroke="currentColor" stroke-width="2"
         viewBox="0 0 24 24" aria-hidden="true">
@@ -142,10 +147,12 @@ description: "Místní organizace KDU-ČSL v Rtyni v Podkrkonoší — Noví lid
           d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z" />
       </svg>
       <span class="min-w-0">
-        <span class="block text-lg font-heading font-black uppercase tracking-tight text-lidovci-blue">Volební plakát</span>
+        <span class="block text-lg font-heading font-black uppercase tracking-tight text-lidovci-blue">Volební
+          plakát</span>
         <span class="block text-sm text-neutral-700">PDF · 4,3 MB</span>
       </span>
-      <span class="ml-auto shrink-0 font-heading font-bold uppercase text-sm text-lidovci-blue group-hover:underline decoration-lidovci-yellow decoration-2 underline-offset-4">Stáhnout</span>
+      <span
+        class="ml-auto shrink-0 font-heading font-bold uppercase text-sm text-lidovci-blue group-hover:underline decoration-lidovci-yellow decoration-2 underline-offset-4">Stáhnout</span>
     </a>
   </div>
 </section>
