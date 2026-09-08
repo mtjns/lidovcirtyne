@@ -865,6 +865,10 @@ a {
   height: 1.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-80 {
   height: 20rem;
 }
@@ -883,6 +887,10 @@ a {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .w-6 {
@@ -957,6 +965,10 @@ a {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -967,10 +979,6 @@ a {
 
 .gap-7 {
   gap: 1.75rem;
-}
-
-.gap-\[4\] {
-  gap: 4;
 }
 
 .gap-\[4rem\] {
@@ -1120,6 +1128,11 @@ a {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -1130,6 +1143,10 @@ a {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-justify {
@@ -1358,6 +1375,10 @@ a {
 }
 
 @media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:inline-block {
     display: inline-block;
   }
@@ -1372,6 +1393,11 @@ a {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
