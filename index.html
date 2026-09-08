@@ -115,7 +115,7 @@ description: "Místní organizace KDU-ČSL v Rtyni v Podkrkonoší — Noví lid
           <span class="thick-rule-blue mb-3"></span>
           <h3 class="text-lg leading-tight">{{ person.name }}</h3>
           {% if person.job %}<p class="eyebrow mt-1">{{ person.job }}</p>{% endif %}
-          {% if person.bio and person.bio != "" %}<p class="text-neutral-700 mt-3 text-base">{{ person.bio }}</p>{%
+          {% if person.bio and person.bio != "" %}<p class="text-neutral-700 mt-3 text-sm text-justify">{{ person.bio }}</p>{%
           endif %}
         </div>
       </div>
@@ -134,7 +134,7 @@ description: "Místní organizace KDU-ČSL v Rtyni v Podkrkonoší — Noví lid
       <p class="text-lg text-neutral-800">Volební materiály ke stažení.</p>
     </div>
 
-    <a href="{{ '/assets/files/banery_velky.pdf' | relative_url }}" target="_blank" rel="noopener"
+    <a href="{{ '/assets/files/baner_velky.pdf' | relative_url }}" download="Lidovci Rtyně - volební plakát.pdf" target="_blank" rel="noopener"
       class="group flex items-center gap-5 bg-lidovci-white border-2 border-lidovci-ink p-5 max-w-xl hover:bg-lidovci-blue-light transition-colors">
       <svg class="w-12 h-12 shrink-0 text-lidovci-blue" fill="none" stroke="currentColor" stroke-width="2"
         viewBox="0 0 24 24" aria-hidden="true">
