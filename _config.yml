@@ -13,16 +13,16 @@ org:
   region_url: "https://www.kdu.cz/Regiony/Kralovehradecky-kraj"
   district: "okres Trutnov"
   contact_person: "Monika Kaněrová"
-  email: "monva@email.cz"
+  email: "kanerova.rtyne@seznam.cz"
   # Kam se odesílají zprávy z kontaktního formuláře (služba FormSubmit).
   # Při PRVNÍM odeslání přijde na tuto adresu aktivační e-mail – potvrďte odkaz v něm.
-  form_email: "monva@email.cz"
+  form_email: "kanerova.rtyne@seznam.cz"
   phone: "+420 736 773 883"
   address: "Rtyně v Podkrkonoší"
   facebook: "https://www.facebook.com/profile.php?id=61593611292747"
   national_url: "https://www.kdu.cz"
 
-form_email: "monva@email.cz"
+form_email: "kanerova.rtyne@seznam.cz"
 
 # --- Build ---
 markdown: kramdown
